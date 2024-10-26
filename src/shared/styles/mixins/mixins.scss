@@ -1,0 +1,66 @@
+@import "fonts";
+@import "flex";
+@import "scroll";
+
+@mixin container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: calc(1272px + 15px + 15px);
+  width: 100%;
+}
+
+@mixin buttonReset {
+  border: none;
+  padding: 0;
+  overflow: visible;
+
+  background: transparent;
+  outline: none;
+
+  color: inherit;
+
+  line-height: normal;
+
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+@mixin textEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin textEllipsisWithLineClamp($val) {
+  display: -webkit-box;
+  -webkit-line-clamp: $val;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin blurContent($blur: 3px, $opacity: 0.15) {
+  filter: blur($blur);
+  opacity: $opacity;
+}
+
+@mixin link {
+  a {
+    color: var(--main-blue);
+    &:hover {
+      color: var(--elements-blue-90);
+    }
+  }
+}

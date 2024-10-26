@@ -1,0 +1,34 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 44px 15px 40px 15px;
+  min-height: 100vh;
+  background: radial-gradient(76.45% 76.45% at 50% 59.1%, rgba(21, 39, 225, 0.13) 0%, rgba(115, 115, 115, 0.00) 100%), #FFF;
+
+  &__logo {
+    @include flex-centered;
+    width: 317px;
+    height: 108px;
+    gap: 4px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(21, 39, 225, 0.16) 0%, rgba(115, 115, 115, 0.00) 70%);
+  }
+  &__content {
+    flex-grow: 1;
+    margin: 24px 0 40px 0;
+    padding: 40px 40px 44px 40px;
+    background-color: var(--bg-white);
+    border-radius: 18px;
+
+    //height: 544px;
+    max-width: 419px;
+    width: 100%;
+  }
+  &__footer, &__footer:hover {
+    color: var(--text-gray);
+    span {
+      margin-left: 20px;
+    }
+  }
+}

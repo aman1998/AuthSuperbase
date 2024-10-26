@@ -1,0 +1,29 @@
+:root {
+    --main-blue: #1527E1;
+    --main-red-orange: #FF522F;
+
+    --bg-black: #000000;
+    --bg-white: #FFFFFF;
+    --bg-gray: #F3F4F9;
+
+    --text-white: #FFFFFF;
+    --text-gray: #9E9E9E;
+    --text-dark: #0F0E0E;
+    --text-dark-20: #2F2F2F;
+    --text-blue-35: #A1A9FF;
+
+    --elements-white: #FFFFFF;
+    --elements-dark: #2F2F2F;
+    --elements-gray: #EDEDED;
+    --elements-gray-60: #9E9E9E;
+    --elements-red-90: #F53C16;
+    --elements-blue-35: #A1A9FF;
+    --elements-blue-90: #1F32FF;
+    --elements-blue-95: #E9EBFF;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+
+    }
+}

@@ -1,0 +1,8 @@
+@import "reset";
+@import "vars";
+@import "antd";
+@import "mixins/mixins.scss";
+
+body {
+  color: var(--text-dark-20);
+}
